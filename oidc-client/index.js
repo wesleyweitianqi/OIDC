@@ -49,7 +49,7 @@ Issuer.discover("http://localhost:3000/oidc")
         let client = new oidcIssuer.Client({
             client_id: "oidcCLIENT",
             client_secret: "client_super_secret",
-            redirect_uris: ["http://localhost:8080/login/callback"],
+            redirect_uris: ["http://localhost:8080/auth/login/callback"],
             response_types: ['code']
         });
         passport.use("oidc", new Strategy({
